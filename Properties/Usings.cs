@@ -1,0 +1,15 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using HarmonyLib;
+global using Il2Cpp;
+global using MelonLoader;
+global using UnityEngine;
+global using Il2CppInterop;
+global using Il2CppInterop.Runtime.Injection;
+global using System.Collections;
+global using ArcticOverlay.Properties;
+global using Il2Cpp;
+global using System.Diagnostics;

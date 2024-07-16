@@ -89,4 +89,7 @@
         <Reference Include="UnityEngine.Il2CppAssetBundleManager" />
         <Reference Include="UnityEngine.Il2CppImageConversionManager" />
     </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Classes\" />
+    </ItemGroup>
 </Project>

@@ -1,13 +1,11 @@
-﻿using MelonLoader;
-using UnityEngine;
-using Il2CppInterop;
-using Il2CppInterop.Runtime.Injection; 
-using System.Collections;
-
+﻿
 namespace ArcticOverlay
 {
 	public class ArcticOverlay : MelonMod
 	{
+
+		private static bool debug = true;
+
 		public override void OnInitializeMelon()
 		{           
 			MelonLogger.Msg("Mod started!");
@@ -24,6 +22,24 @@ namespace ArcticOverlay
 		{
 
 		}
+
+		public override void OnFixedUpdate()
+		{
+			// Monitor for Panel/Overlay changes
+			OverlayMonitor.Check();
+		}
+
+
+
+		internal static void LogDebug(string msg)
+		{
+			if(debug)
+			{
+				MelonLogger.Log(System.ConsoleColor.Cyan, msg);
+			}
+		}
+
+
 
     }
 }
